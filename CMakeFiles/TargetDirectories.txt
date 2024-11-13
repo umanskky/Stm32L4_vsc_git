@@ -1,0 +1,5 @@
+C:/Stm32L4_vsc_git/CMakeFiles/Stm32L4_vsc_git.dir
+C:/Stm32L4_vsc_git/CMakeFiles/edit_cache.dir
+C:/Stm32L4_vsc_git/CMakeFiles/rebuild_cache.dir
+C:/Stm32L4_vsc_git/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+C:/Stm32L4_vsc_git/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
