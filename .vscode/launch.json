@@ -11,19 +11,19 @@
             "executable": "${command:cmake.launchTargetPath}",
             // Let CMake extension decide executable: "${command:cmake.launchTargetPath}"
             // Or fixed file path: "${workspaceFolder}/path/to/filename.elf"
-            "request": "attach",
+            "request": "launch",
             "servertype": "stlink",
             "device": "STM32L476RGTx", //MCU used
             "interface": "swd",
             "serialNumber": "",        //Set ST-Link ID if you use multiple at the same time
             "runToEntryPoint": "main",
-            "svdFile": "/opt/ST/STM32CubeCLT_1.16.0/STMicroelectronics_CMSIS_SVD/STM32L4x6.svd",
+            "svdFile": "${config:STM32VSCodeExtension.cubeCLT.path}/STMicroelectronics_CMSIS_SVD/STM32L476.svd",
             "v1": false,               //Change it depending on ST Link version
-            "serverpath": "/opt/ST/STM32CubeCLT_1.16.0/STLink-gdb-server/bin/ST-LINK_gdbserver",
-            "stm32cubeprogrammer":"/opt/ST/STM32CubeCLT_1.16.0/STM32CubeProgrammer/bin/",
-            "stlinkPath": "/opt/ST/STM32CubeCLT_1.16.0/STLink-gdb-server/bin/ST-LINK_gdbserver",   
-            "armToolchainPath": "/opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/",
-            "gdbPath": "/opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/arm-none-eabi-gdb",            
+            "serverpath": "${config:STM32VSCodeExtension.cubeCLT.path}/STLink-gdb-server/bin/ST-LINK_gdbserver",
+            "stm32cubeprogrammer":"${config:STM32VSCodeExtension.cubeCLT.path}/STM32CubeProgrammer/bin",
+            "stlinkPath": "${config:STM32VSCodeExtension.cubeCLT.path}/STLink-gdb-server/bin/ST-LINK_gdbserver",   
+            "armToolchainPath": "${config:STM32VSCodeExtension.cubeCLT.path}/GNU-tools-for-STM32/bin",
+            "gdbPath":"${config:STM32VSCodeExtension.cubeCLT.path}/GNU-tools-for-STM32/bin/arm-none-eabi-gdb",            
             "serverArgs": [
                 "-m","0",
             ],
@@ -38,7 +38,7 @@
             "executable": "${command:cmake.launchTargetPath}",
             // Let CMake extension decide executable: "${command:cmake.launchTargetPath}"
             // Or fixed file path: "${workspaceFolder}/path/to/filename.elf"
-            "request": "launch",
+            "request": "attach",
             "servertype": "stlink",
             "device": "STM32L476RGTx", //MCU used
             "interface": "swd",
