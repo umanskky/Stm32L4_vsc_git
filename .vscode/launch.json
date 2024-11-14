@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Build & Debug Microcontroller - ST-Link",
+           "name": "Build & Debug Microcontroller - ST-Link",
             "cwd": "${workspaceFolder}",
             "type": "cortex-debug",
             "executable": "${command:cmake.launchTargetPath}",
@@ -17,7 +17,7 @@
             "interface": "swd",
             "serialNumber": "",        //Set ST-Link ID if you use multiple at the same time
             "runToEntryPoint": "main",
-            "svdFile": "${config:STM32VSCodeExtension.cubeCLT.path}/STMicroelectronics_CMSIS_SVD/STM32L476.svd",
+            "svdFile": "${config:STM32VSCodeExtension.cubeCLT.path}/STMicroelectronics_CMSIS_SVD/STM32L4x6.svd",
             "v1": false,               //Change it depending on ST Link version
             "serverpath": "${config:STM32VSCodeExtension.cubeCLT.path}/STLink-gdb-server/bin/ST-LINK_gdbserver",
             "stm32cubeprogrammer":"${config:STM32VSCodeExtension.cubeCLT.path}/STM32CubeProgrammer/bin",
@@ -44,7 +44,7 @@
             "interface": "swd",
             "serialNumber": "",        //Set ST-Link ID if you use multiple at the same time
             "runToEntryPoint": "main",
-            "svdFile": "${config:STM32VSCodeExtension.cubeCLT.path}/STMicroelectronics_CMSIS_SVD/STM32L476.svd",
+            "svdFile": "${config:STM32VSCodeExtension.cubeCLT.path}/STMicroelectronics_CMSIS_SVD/STM32L4x6.svd",
             "v1": false,               //Change it depending on ST Link version
             "serverpath": "${config:STM32VSCodeExtension.cubeCLT.path}/STLink-gdb-server/bin/ST-LINK_gdbserver",
             "stm32cubeprogrammer":"${config:STM32VSCodeExtension.cubeCLT.path}/STM32CubeProgrammer/bin",
